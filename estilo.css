@@ -1,19 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+   
+    background: linear-gradient(45deg, #120c56, #000000);
+    
+    
 }
 
-div {
+main {
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-content: center;
     align-items: center;
+    width: 95vw;
+    height: 100vh;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    flex-direction: initial;
+}
+
+li {
+    margin: 20px;
+    margin-inline: 5%;
+    font-size: 30pt;
+    font-family: 'Sono', sans-serif;
+}
+h1 {
+    font-size: 90pt;
+    font-family: 'Sono', sans-serif;
+}
+p {
+    font-size: 30pt;
+    font-family: 'Sono', sans-serif;
+}
+
+li, h1, p {
+    color: #fff;
+}
+.container-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    border: 0.115rem solid #fff;
+}
+
+.container-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 div img {
     border-radius: 50%;
-    width: 30%;
+    
 }
+
+@media (max-width: 967px) {
+
+    h1 {
+        font-size: 30pt;
+    }
+    p {
+        font-size: 10pt;
+        text-align: center;
+    }
+}
+
